@@ -4,7 +4,7 @@
 </h1>
 
 <p>
-  <a href="https://www.optica.org/events/congress/biophotonics_congress/"><img src="https://img.shields.io/badge/Journal-Optics_Express_2026-orange?style=flat-square" alt="Optica Biophotonics Congress 2026"></a>
+  <a href="https://www.optica.org/events/congress/biophotonics_congress/"><img src="https://img.shields.io/badge/-Optica_Biophotonics_Congress_2026-orange?style=flat-square" alt="Optica Biophotonics Congress 2026"></a>
 </p>
 
 <p>
