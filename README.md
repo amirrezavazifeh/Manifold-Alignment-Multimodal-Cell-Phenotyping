@@ -24,6 +24,11 @@
 
 ## Overview
 
+
+<p align="center">
+  <img src="UMAP vs MANE 1.png" width="1000">
+</p>
+
 ---
 
 ## Method
