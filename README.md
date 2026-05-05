@@ -33,13 +33,13 @@ One natural idea is to train a deep neural network (e.g., a U-Net) to predict fl
 - Some cells appear in both fluorescent channels, creating ambiguous labels.
 - Ultimately, cell counting should be performed on virtually stained images, as the live-to-total cell ratio is what matters.
 
-### Approach 2: Cell Segmentation + Classification
+### Approach 2: Cell Segmentation + Supervised Classification
 A more principled pipeline first segments individual cells, then trains a classifier to predict live vs. dead. This avoids full image-to-image mapping and directly targets viability counting. However, supervised classification still has failure modes:
 - Intra-class variation among cells with the same label (e.g., dead) cannot be captured.
 - Outliers such as inaccurate bounding boxes cannot be identified by supervised learning and can affect the training procedure.
 - Most critically, **no labeled dataset exists for unstained samples** — so if unstained samples do not sufficiently resemble the stained ones, a supervised model trained on stained samples will not generalize to unstained ones.
 
-### Approach 3: Unsupervised Dimensionality Reduction
+### Approach 3: Cell Segmentation + Unsupervised Dimensionality Reduction
 Because of the possible domain gap between stained and unstained images, an unsupervised approach is more appropriate. Nonlinear dimensionality reduction methods such as [UMAP](https://arxiv.org/abs/1802.03426) and [t-SNE](https://jmlr.org/papers/v9/vandermaaten08a.html) project high-dimensional cell images into a 2D latent space, where live and dead cells naturally form separable clusters with no labels required. This also enables discovery of sub-populations (e.g., morphologically distinct types of dead cells) and outlier detection that supervised methods miss. Standard UMAP operates on a single modality and must be applied separately to each imaging configuration. Different modalities — brightfield, phase-contrast, different focal planes — each capture complementary cellular information. **[Manifold-Aligned Neighbor Embedding (MANE)](https://openreview.net/forum?id=BFIER4-J6xc)** extends UMAP to jointly embed multiple modalities into a shared low-dimensional space, enforcing that the same cell maps to the same point regardless of which modality it comes from.
 
 ---
