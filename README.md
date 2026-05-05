@@ -58,7 +58,7 @@ where $p_{ij}^{(r)}$ and $q_{ij}^{(r)}$ are the high- and low-dimensional pairwi
 In our experiments, brightfield and phase-contrast RGB images of CHO cells were acquired at multiple focal planes. Individual cells were segmented using Cellpose and resized to 64×64 pixels, yielding a 12,288-dimensional feature vector per cell per modality. MANE was then applied to produce a joint 2D embedding.
 
 <p align="center">
-  <img src="method.png" width="1000">
+  <img src="Method.png" width="1000">
 </p>
 
 
