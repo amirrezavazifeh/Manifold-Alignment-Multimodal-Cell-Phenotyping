@@ -18,8 +18,7 @@
 
 ## Overview
 
-Determining cell viability is a fundamental requirement across biological research, pharmaceutical development, and clinical practice. Conventional approaches rely on fluorescent dyes such as acridine orange (AO) and propidium iodide (PI), followed by fluorescence imaging in which live and dead cells emit signals in distinct channels, enabling their discrimination. Overall viability is then computed as the ratio of live cells to the total number of cells. However, staining protocols are labor-intensive, may perturb normal cellular processes, and are susceptible to photobleaching. 
-This work shows that unstained brightfield or phase-contrast images contain sufficient information for viability analysis without any fluorescent labels, and introduces a multimodal unsupervised framework to achieve it.
+Determining cell viability is a fundamental requirement across biological research, pharmaceutical development, and clinical practice. Conventional approaches rely on fluorescent dyes such as acridine orange (AO) and propidium iodide (PI), followed by fluorescence imaging in which live and dead cells emit signals in distinct channels, enabling their discrimination. Overall viability is then computed as the ratio of live cells to the total number of cells. However, staining protocols are labor-intensive, may perturb normal cellular processes, and are susceptible to photobleaching. This work shows that unstained brightfield or phase-contrast images contain sufficient information for viability analysis without any fluorescent labels, and introduces a multimodal unsupervised framework to achieve it.
 
 ---
 
